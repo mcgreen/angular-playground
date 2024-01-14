@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+html, body {
+  background-color: $primary-background-color;
+}
+
+body {
+  font-family: Roboto, 'sans-serif';
+}
+
+::-webkit-scrollbar {
+  background-color: $primary-background-color;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $primary-background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+}

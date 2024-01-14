@@ -1,0 +1,39 @@
+@use '@angular/material' as mat;
+//@use 'ag-grid-community/styles' as ag;
+
+@import 'src/assets/mat/maticons';
+@import 'src/assets/mat/fonts';
+
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$blue-palette, 300, 400, 500);
+$my-accent: mat.define-palette(mat.$gray-palette, 200, 300);
+$my-warn: mat.define-palette(mat.$deep-orange-palette, 300, 400, 500);
+
+$my-theme: mat.define-dark-theme(
+    (
+      color: (
+        primary: $my-primary,
+        accent: $my-accent,
+        warn: $my-warn
+      )
+    )
+);
+
+@include mat.core-theme($my-theme);
+@include mat.button-theme($my-theme);
+@include mat.all-component-themes($my-theme);
+
+//@include ag.grid-styles((
+//  theme: custom-angular,
+//  extend-theme: alpine-dark,
+//  font-size: 14px,
+//  border-radius: 4px,
+//  header-column-separator-display: block,
+//));
+//
+//.ag-theme-custom-angular .ag-menu-option-active {
+//  background-color: #2661ad;
+//  color: white;
+//}
