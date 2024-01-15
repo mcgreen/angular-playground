@@ -1,0 +1,14 @@
+@use 'ag-grid-community/styles' as ag;
+
+@include ag.grid-styles((
+  theme: custom-angular,
+  extend-theme: alpine-dark,
+  font-size: 14px,
+  border-radius: 4px,
+  header-column-separator-display: block,
+));
+
+.ag-theme-custom-angular .ag-menu-option-active {
+  background-color: #2661ad;
+  color: white;
+}
