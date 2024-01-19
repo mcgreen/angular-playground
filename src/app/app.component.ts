@@ -15,7 +15,7 @@ import {CustomLoaderComponent} from "@components/shared/custom-loader/custom-loa
   imports: [RouterOutlet, AsyncPipe, MatToolbarModule, MatSidenavModule, PwaComponent, PwaUpdateComponent, CustomLoaderComponent],
   template: `
     <mat-toolbar class="toolbar">
-      <mat-toolbar-row class="flex">
+      <mat-toolbar-row class="flex justify-content-sb">
         <span class="header">Angular Playground</span>
         <app-pwa></app-pwa>
         <app-pwa-update></app-pwa-update>

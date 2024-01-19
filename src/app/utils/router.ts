@@ -14,10 +14,13 @@ export const routeInstances = (event?: any): (boolean | undefined) => {
   } else if (event instanceof RouteConfigLoadStart) {
     return true;
   }
-
   return undefined;
 }
 
 export function finalizeLoading<T>(loader: Subject<any>): (source$: Observable<T>) => Observable<T> {
-  return (source$) => {return source$.pipe(finalize(() => {return loader.next(false)}))}
+  return (source$) => {
+    return source$.pipe(finalize(() => {
+      return loader.next(false)
+    }))
+  }
 }

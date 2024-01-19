@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PwaUpdateComponent } from './pwa-update.component';
+import {PwaUpdateComponent} from './pwa-update.component';
 
 describe('PwaUpdateComponent', () => {
   let component: PwaUpdateComponent;
@@ -11,7 +11,7 @@ describe('PwaUpdateComponent', () => {
       imports: [PwaUpdateComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(PwaUpdateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

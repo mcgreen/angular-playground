@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CustomLoaderComponent } from './custom-loader.component';
+import {CustomLoaderComponent} from './custom-loader.component';
 
 describe('CusotmLoaderComponent', () => {
   let component: CustomLoaderComponent;

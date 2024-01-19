@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { PwaService } from './pwa.service';
+import {PwaService} from './pwa.service';
 
 describe('PwaService', () => {
   let service: PwaService;
