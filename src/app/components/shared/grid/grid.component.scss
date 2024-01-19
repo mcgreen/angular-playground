@@ -1,4 +1,6 @@
-@use '../../../../../node_modules/ag-grid-community/styles/index' as ag;
+@use 'ag-grid-community/styles' as ag;
+
+@import "styles/variables";
 
 @include ag.grid-styles((
   theme: custom-angular,
@@ -11,4 +13,11 @@
 .ag-theme-custom-angular .ag-menu-option-active {
   background-color: #2661ad;
   color: white;
+}
+
+.grid-result {
+  height: 100%;
+  margin-top: 2em;
+  box-shadow: 2px 2px 2px $background-color,
+    -1px -1px 3px $background-color;
 }
